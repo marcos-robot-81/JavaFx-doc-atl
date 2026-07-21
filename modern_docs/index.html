@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern FXML and JavaFX CSS Documentation">
+    <title>Modern JavaFX Documentation - Introduction to FXML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>JavaFX Modern Docs</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <h3>FXML Tutorial</h3>
+                <ul>
+                    <li><a href="#overview" class="active">Overview</a></li>
+                    <li><a href="#elements">Elements</a></li>
+                    <li><a href="#class-instances">Class Instances</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#scripting">Scripting</a></li>
+                </ul>
+                <h3>CSS Tutorial</h3>
+                <ul>
+                    <li><a href="#">CSS Reference</a></li>
+                    <li><a href="#">Styling Nodes</a></li>
+                    <li><a href="#">Selectors</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                </button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search documentation...">
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-btn">🌙 Dark</button>
+                </div>
+            </header>
+
+            <article class="content-area">
+                <div class="hero-section">
+                    <h1 id="overview">Introduction to FXML</h1>
+                    <p class="subtitle">Release: JavaFX 26</p>
+                </div>
+
+                <section class="doc-section glass-panel">
+                    <h2>Overview</h2>
+                    <p>
+                        <strong>FXML</strong> is a scriptable, XML-based markup language for constructing Java object graphs. 
+                        It provides a convenient alternative to constructing such graphs in procedural code, and is ideally suited 
+                        to defining the user interface of a JavaFX application.
+                    </p>
+                    <p>
+                        The hierarchical structure of an XML document closely parallels the structure of the JavaFX scene graph, 
+                        making it intuitive to design rich user interfaces.
+                    </p>
+                    <div class="info-alert">
+                        <strong>Tip:</strong> FXML separates the user interface design from the application logic, making your code cleaner and easier to maintain.
+                    </div>
+                </section>
+
+                <section class="doc-section glass-panel" id="elements">
+                    <h2>Elements</h2>
+                    <p>In FXML, an XML element represents one of the following:</p>
+                    <ul class="feature-list">
+                        <li><span class="icon">🔹</span> A class instance</li>
+                        <li><span class="icon">🔹</span> A property of a class instance</li>
+                        <li><span class="icon">🔹</span> A "static" property</li>
+                        <li><span class="icon">🔹</span> A "define" block</li>
+                        <li><span class="icon">🔹</span> A block of script code</li>
+                    </ul>
+                </section>
+
+                <section class="doc-section glass-panel" id="class-instances">
+                    <h2>Class Instance Elements</h2>
+                    <p>
+                        Class instances can be constructed in FXML in several ways. The most common is via <em>instance declaration elements</em>, 
+                        which simply create a new instance of a class by name. 
+                    </p>
+                    <div class="code-block">
+                        <div class="code-header">Example: Instance Declaration</div>
+                        <pre><code>&lt;VBox xmlns:fx="http://javafx.com/fxml"&gt;
+    &lt;Label text="Hello, Modern JavaFX!" /&gt;
+&lt;/VBox&gt;</code></pre>
+                    </div>
+                    <p>Other ways of creating class instances include referencing existing values, copying existing values, and more.</p>
+                </section>
+
+                <div class="pagination">
+                    <a href="#" class="btn btn-prev">❮ Previous</a>
+                    <a href="#" class="btn btn-next">Next: Attributes ❯</a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
