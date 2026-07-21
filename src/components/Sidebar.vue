@@ -9,7 +9,8 @@ const emit = defineEmits(['close'])
       <h2>JavaFX Modern Docs</h2>
     </div>
     <nav class="sidebar-nav">
-      <h3>FXML Tutorial</h3>
+      <details class="nav-group">
+        <summary><h3>FXML Tutorial</h3></summary>
       <ul class="sub-menu">
         <li><router-link to="/fxml/overview" @click="emit('close')">Overview</router-link></li>
         <li><router-link to="/fxml/elements" @click="emit('close')">Elements</router-link></li>
@@ -47,8 +48,10 @@ const emit = defineEmits(['close'])
         <li><router-link to="/fxml/custom-components" @click="emit('close')">Custom Components</router-link></li>
         <li><router-link to="/fxml/deploying-an-application-as-a-module" @click="emit('close')">Deploying an Application as a Module</router-link></li>
       </ul>
+</details>
     <h3>CSS Reference Guide</h3>
-      <h4>Introduction</h4>
+      <details class="nav-group">
+  <summary><h4>Introduction</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/introduction" @click="emit('close')">Introduction</router-link></li>
         <li><router-link to="/css/css-and-the-javafx-scene-graph" @click="emit('close')">CSS and the JavaFX Scene Graph</router-link></li>
@@ -66,7 +69,9 @@ const emit = defineEmits(['close'])
         <li><router-link to="/css/understanding-----parser-warnings" @click="emit('close')">Understanding         Parser Warnings</router-link></li>
         <li><router-link to="/css/limitations" @click="emit('close')">Limitations</router-link></li>
       </ul>
-      <h4>Types</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Types</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/types" @click="emit('close')">Types</router-link></li>
         <li><router-link to="/css/inherit" @click="emit('close')">inherit</router-link></li>
@@ -99,12 +104,16 @@ const emit = defineEmits(['close'])
         <li><router-link to="/css/easing-function" @click="emit('close')">&lt;easing-function&gt;</router-link></li>
         <li><router-link to="/css/text-bounds" @click="emit('close')">&lt;text-bounds&gt;</router-link></li>
       </ul>
-      <h4>Stage</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Stage</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/stage" @click="emit('close')">Stage</router-link></li>
         <li><router-link to="/css/popupwindow" @click="emit('close')">PopupWindow</router-link></li>
       </ul>
-      <h4>Nodes</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Nodes</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/nodes" @click="emit('close')">Nodes</router-link></li>
         <li><router-link to="/css/group" @click="emit('close')">Group</router-link></li>
@@ -139,7 +148,9 @@ const emit = defineEmits(['close'])
         <li><router-link to="/css/textflow" @click="emit('close')">TextFlow</router-link></li>
         <li><router-link to="/css/webview" @click="emit('close')">WebView</router-link></li>
       </ul>
-      <h4>Controls</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Controls</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/controls" @click="emit('close')">Controls</router-link></li>
         <li><router-link to="/css/accordion" @click="emit('close')">Accordion</router-link></li>
@@ -195,7 +206,9 @@ const emit = defineEmits(['close'])
         <li><router-link to="/css/treeview" @click="emit('close')">TreeView</router-link></li>
         <li><router-link to="/css/treeview-1" @click="emit('close')">TreeView 1</router-link></li>
       </ul>
-      <h4>Charts</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Charts</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/charts" @click="emit('close')">Charts</router-link></li>
         <li><router-link to="/css/areachart" @click="emit('close')">AreaChart</router-link></li>
@@ -212,12 +225,15 @@ const emit = defineEmits(['close'])
         <li><router-link to="/css/valueaxis" @click="emit('close')">ValueAxis</router-link></li>
         <li><router-link to="/css/xychart" @click="emit('close')">XYChart</router-link></li>
       </ul>
-      <h4>Incubator Modules</h4>
+</details>
+      <details class="nav-group">
+  <summary><h4>Incubator Modules</h4></summary>
       <ul class="sub-menu">
         <li><router-link to="/css/incubator-modules" @click="emit('close')">Incubator Modules</router-link></li>
         <li><router-link to="/css/richtextarea" @click="emit('close')">RichTextArea</router-link></li>
         <li><router-link to="/css/codearea" @click="emit('close')">CodeArea</router-link></li>
       </ul>
+</details>
     </nav>
   </aside>
 </template>

@@ -199,3 +199,42 @@ body {
     border-bottom-style: solid;
     background-color: rgba(56, 189, 248, 0.1);
 }
+
+/* Collapsible Navigation */
+.nav-group {
+    margin-bottom: 8px;
+}
+.nav-group summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 8px 0;
+    transition: color 0.2s;
+    user-select: none;
+}
+.nav-group summary::-webkit-details-marker {
+    display: none;
+}
+.nav-group summary h3, .nav-group summary h4 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+.nav-group summary h4 {
+    font-size: 1rem;
+    color: var(--accent);
+}
+.nav-group summary::before {
+    content: '▶';
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-right: 8px;
+    transition: transform 0.2s;
+    color: var(--text-muted);
+}
+.nav-group[open] > summary::before {
+    transform: rotate(90deg);
+}
+.nav-group summary:hover h3, .nav-group summary:hover h4 {
+    color: var(--accent-hover);
+}
