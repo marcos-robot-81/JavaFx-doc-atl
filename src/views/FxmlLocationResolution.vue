@@ -27,6 +27,9 @@
 &lt;/ImageView&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <img class="javafx-imageview" src="#" alt="my_image.png" />
+      </div>
 
       <p>
         Since <span class="code">Image</span> is an immutable object, a builder
@@ -40,6 +43,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;ImageView image="@my_image.png"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <img class="javafx-imageview" src="#" alt="my_image.png" />
       </div>
 
       <p>
@@ -59,6 +65,9 @@
         <pre><code>&lt;Image url="@My%20Image.png"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">URL: My%20Image.png</div>
+      </div>
 
       <p>rather than:</p>
 
@@ -66,6 +75,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;Image url="@My Image.png"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #ffebee; border: 1px dashed red; font-size: 12px; color: #c62828;">Error: Unescaped space in URL</div>
       </div>
       <div class="info-alert">
         <strong>HTML Analogy:</strong> In HTML, using relative paths for assets
@@ -77,6 +89,11 @@
         <pre><code class="language-html">&lt;!-- HTML Analogy for Location Resolution --&gt;
 &lt;img src="/my_image.png" alt="Relative image" /&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <img src="#" alt="Relative image" style="width: 50px; height: 50px; background: #ddd; display: block;" />
+        </div>
       </div>
     </section>
     <div class="pagination">

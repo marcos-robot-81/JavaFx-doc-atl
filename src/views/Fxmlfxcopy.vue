@@ -33,6 +33,10 @@
   document.body.appendChild(clone);
 &lt;/script&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <div>Reusable Content</div>
+        <div>Reusable Content</div>
+      </div>
     </section>
     <div class="pagination">
       <router-link to="/fxml/fx-reference" class="btn btn-prev"

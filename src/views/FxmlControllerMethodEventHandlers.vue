@@ -29,6 +29,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Note the use of the <span class="code">fx:controller</span> attribute on
@@ -47,6 +52,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller Method: handleButtonAction(ActionEvent)</div>
       </div>
 
       <p>
@@ -76,6 +84,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller Method: handleButtonAction()</div>
+      </div>
 
       <p>Controllers are discussed in more detail in a later section.</p>
       <div class="info-alert">
@@ -96,6 +107,9 @@ function handleButtonAction(event) {
     console.log("You clicked me!");
 }
 &lt;/script&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn" onclick="console.log('You clicked me!')">Click Me!</button>
       </div>
     </section>
     <div class="pagination">

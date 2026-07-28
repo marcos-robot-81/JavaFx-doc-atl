@@ -24,6 +24,9 @@
     opens com.foo to javafx.fxml;
 }</code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">module-info.java (foo.app)</div>
+      </div>
 
       <p>
         Alternatively, a type is reflectively accessible if the module
@@ -51,6 +54,9 @@
         <pre><code>&lt;!-- Cross-Origin Policy Example --&gt;
 &lt;script type="module" crossorigin="use-credentials" src="https://example.com/app.js"&gt;&lt;/script&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">HTML script module loading</div>
       </div>
     </section>
     <div class="pagination">

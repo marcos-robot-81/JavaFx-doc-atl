@@ -26,6 +26,9 @@
         :root { abc: #f00 }<br />
         .button { <code>-fx-background-color</code>: abc }
       </p>
+      <div class="javafx-preview">
+        <button class="javafx-btn" style="background-color: #f00; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 14px;">Botão Exemplo</button>
+      </div>
     </section>
     <div class="pagination">
       <router-link to="/css/named-colors-named-color" class="btn btn-prev"

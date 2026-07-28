@@ -22,6 +22,9 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">...</div>
+      </div>
 
       <div class="caption">MainController.java</div>
       <div class="code-block">
@@ -33,6 +36,11 @@
     ...
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox" style="padding: 10px; border: 1px dashed #ccc; text-align: center;">
+          MainController (Java)
+        </div>
       </div>
 
       <p>
@@ -63,6 +71,14 @@
   const dialog = document.getElementById('dialogComponent');
   dialog.showModal();
 &lt;/script&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="border: 1px solid #ccc; padding: 10px;">
+          <strong>mainApp</strong>
+          <div style="border: 1px dashed #007bff; padding: 10px; margin-top: 10px;">
+            my-dialog (dialogComponent)
+          </div>
+        </div>
       </div>
     </section>
     <div class="pagination">

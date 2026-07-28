@@ -37,6 +37,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Note the use of the language processing instruction at the beginning of
@@ -95,6 +100,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Note the use of the <span class="code">fx:controller</span> attribute on
@@ -113,6 +123,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (handleButtonAction)</div>
       </div>
 
       <p>
@@ -142,6 +155,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (handleButtonAction no arg)</div>
+      </div>
 
       <p>Controllers are discussed in more detail in a later section.</p>
 
@@ -162,6 +178,11 @@ public class MyController {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>With the controller that contains a field like this</p>
 
@@ -175,6 +196,9 @@ public class MyController {
     ...
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (onActionHandler field)</div>
       </div>
 
       <p>
@@ -209,6 +233,9 @@ public class MyController {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox"></div>
+      </div>
 
       where the handler method looks like this:
 
@@ -224,6 +251,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (handleChildrenChange)</div>
       </div>
 
       <p>
@@ -247,6 +277,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (handleParentChange)</div>
+      </div>
 
       <p>
         For convenience, the first parameter can be a subclass of
@@ -265,6 +298,9 @@ public class MyController {
         <pre><code>&lt;VBox fx:controller="com.foo.MyController"
     xmlns:fx="http://javafx.com/fxml" onParentChange="#handleParentChange"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox"></div>
       </div>
 
       <p>
@@ -287,6 +323,11 @@ public class MyController {
 
 &lt;!-- Framework declarative handler (Vue.js) --&gt;
 &lt;button @click="handleButtonAction"&gt;Click Me!&lt;/button&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <button class="javafx-btn">Click Me!</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

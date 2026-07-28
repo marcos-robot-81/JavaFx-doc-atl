@@ -19,6 +19,9 @@
     &lt;minHeight&gt;&lt;Double fx:constant="NEGATIVE_INFINITY"/&gt;&lt;/minHeight&gt;
 &lt;/Button&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Button</button>
+      </div>
 
       <div class="info-alert">
         <strong>HTML Analogy:</strong> Native HTML doesn't support reading class
@@ -30,6 +33,9 @@
         <pre><code>&lt;button :style="{ minHeight: Number.NEGATIVE_INFINITY + 'px' }"&gt;
   Content
 &lt;/button&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Content</button>
       </div>
     </section>
     <div class="pagination">

@@ -47,10 +47,16 @@
         right.
       </p>
       <p class="example">linear-gradient(to bottom right, red, black)</p>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="background: linear-gradient(to bottom right, red, black); width: 200px; height: 100px; border: 1px solid #ccc;"></div>
+      </div>
       <p>This is equivalent to:</p>
       <p class="example">
         linear-gradient(from 0% 0% to 100% 100%, red 0%, black 100%)
       </p>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="background: linear-gradient(to bottom right, red 0%, black 100%); width: 200px; height: 100px; border: 1px solid #ccc;"></div>
+      </div>
       <p>
         This more complex example will create a 50px high bar at the top with a
         3 color gradient with white underneath for the rest of the filled area.
@@ -59,6 +65,9 @@
         linear-gradient(from 0px 0px to 0px 50px, gray, darkgray 50%, dimgray
         99%, white)
       </p>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="background: linear-gradient(to bottom, gray, darkgray 50%, dimgray 99%, white); width: 200px; height: 100px; border: 1px solid #ccc;"></div>
+      </div>
       <p>
         <span style="color: #af0000"
           >The following syntax for linear gradient does not conform to the CSS

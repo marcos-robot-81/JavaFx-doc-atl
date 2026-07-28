@@ -65,6 +65,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Clicking the button triggers the event handler, which invokes the
@@ -94,6 +99,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <div class="caption">example.js</div>
       <div class="code-block">
@@ -103,6 +113,9 @@ function handleButtonAction(event) {
    java.lang.System.out.println('You clicked me!');
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">example.js (Script)</div>
       </div>
 
       <p>
@@ -133,6 +146,9 @@ var myText = "This is the text of my label.";
 &lt;Label text="$myText"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">$myText</span>
+      </div>
 
       <p>
         <strong>Warning:</strong> As of JavaFX 8,
@@ -150,6 +166,9 @@ function handleButtonAction(event) {
    System.out.println('You clicked me!');
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">Nashorn compatibility script</div>
       </div>
 
       <div class="info-alert">HTML Analogy</div>
@@ -177,6 +196,9 @@ function handleButtonAction(event) {
 &lt;!-- Event Binding --&gt;
 &lt;button onclick="handleButtonAction(event)"&gt;Click Me!&lt;/button&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Click Me!</button>
       </div>
     </section>
     <div class="pagination">

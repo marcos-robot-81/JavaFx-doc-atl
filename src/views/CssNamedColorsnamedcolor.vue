@@ -16,6 +16,9 @@
         &nbsp;&nbsp;&nbsp; <code>-fx-background-color</code>: red;<br />
         }
       </p>
+      <div class="javafx-preview">
+        <button class="javafx-btn" style="background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 14px;">Botão Exemplo</button>
+      </div>
       <p>The named colors that are available in CSS are:</p>
 
       <div style="margin: 0 3em">

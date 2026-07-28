@@ -31,6 +31,13 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> A</label>
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> B</label>
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> C</label>
+        </div>
+      </div>
 
       <p>
         Elements in define blocks are usually assigned an ID that can be used to
@@ -52,6 +59,17 @@
     &lt;/defs&gt;
     &lt;rect fill="url(#myGradient)" /&gt;
 &lt;/svg&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <svg width="100" height="50">
+            <defs>
+                <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="100" height="50" fill="url(#myGradient)" />
+        </svg>
       </div>
     </section>
     <div class="pagination">

@@ -27,6 +27,9 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox"></div>
+      </div>
 
       where the handler method looks like this:
 
@@ -42,6 +45,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">MyController.java (ListChangeListener)</div>
       </div>
 
       <p>
@@ -65,6 +71,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">MyController.java (ChangeListener)</div>
+      </div>
 
       <p>
         For convenience, the first parameter can be a subclass of
@@ -83,6 +92,9 @@ public class MyController {
         <pre><code>&lt;VBox fx:controller="com.foo.MyController"
     xmlns:fx="http://javafx.com/fxml" onParentChange="#handleParentChange"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox"></div>
       </div>
 
       <p>
@@ -110,6 +122,9 @@ watch(() =&gt; state.children, (newVal, oldVal) =&gt; {
     console.log("Children changed!");
 }, { deep: true })
 &lt;/script&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">Vue Reactivity Watcher</div>
       </div>
     </section>
     <div class="pagination">

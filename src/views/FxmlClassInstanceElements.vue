@@ -29,6 +29,10 @@
         <div class="code-header">Example: Importing a single class</div>
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <!-- just illustrative for import -->
+        <div class="javafx-rect" style="width: 100%; height: 20px; background: #eee; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">Import: javafx.scene.control.Label</div>
+      </div>
 
       <p>
         This PI imports all classes from the
@@ -38,6 +42,10 @@
       <div class="code-block">
         <div class="code-header">Example: Importing a package</div>
         <pre><code>&lt;?import javafx.scene.control.*?&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <!-- just illustrative for import -->
+        <div class="javafx-rect" style="width: 100%; height: 20px; background: #eee; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">Import: javafx.scene.control.*</div>
       </div>
 
       <p>
@@ -54,6 +62,10 @@
 &lt;Label text="Hello, World!"/&gt;</code></pre>
       </div>
 
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
+      </div>
+
       <h4>Maps</h4>
       <p>
         If an element represents a type that already implements
@@ -65,6 +77,11 @@
       <div class="code-block">
         <div class="code-header">Example: Using HashMap in FXML</div>
         <pre><code>&lt;HashMap foo="123" bar="456"/&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #f8f9fa; border: 1px solid #ddd; font-family: monospace;">
+          { foo: "123", bar: "456" }
+        </div>
       </div>
 
       <h4>fx:value</h4>
@@ -80,6 +97,13 @@
         <pre><code>&lt;String fx:value="Hello, World!"/&gt;
 &lt;Double fx:value="1.0"/&gt;
 &lt;Boolean fx:value="false"/&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox" style="gap: 4px;">
+          <div class="javafx-label">String: "Hello, World!"</div>
+          <div class="javafx-label">Double: 1.0</div>
+          <div class="javafx-label">Boolean: false</div>
+        </div>
       </div>
 
       <h4>fx:factory</h4>
@@ -98,6 +122,13 @@
     &lt;String fx:value="C"/&gt;
 &lt;/FXCollections&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <ul style="margin: 0; padding-left: 20px; font-family: monospace;">
+          <li>"A"</li>
+          <li>"B"</li>
+          <li>"C"</li>
+        </ul>
+      </div>
 
       <div class="info-alert">
         <strong>HTML Analogy:</strong> No FXML, a criação de uma instância de
@@ -112,6 +143,11 @@
 &lt;div class="vbox-layout"&gt;
     &lt;span class="label"&gt;Hello, World!&lt;/span&gt;
 &lt;/div&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="vbox-layout" style="display: flex; flex-direction: column; padding: 10px; border: 1px solid #ccc;">
+            <span class="label" style="font-family: sans-serif;">Hello, World!</span>
+        </div>
       </div>
     </section>
 

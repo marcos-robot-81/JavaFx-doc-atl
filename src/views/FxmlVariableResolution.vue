@@ -21,6 +21,11 @@
 &lt;RadioButton text="C" toggleGroup="$myToggleGroup"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> A</div>
+        <div class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> B</div>
+        <div class="javafx-radiobutton"><input type="radio" name="myToggleGroup"> C</div>
+      </div>
 
       <p>
         Assigning an <span class="code">fx:id</span> value to an element creates
@@ -42,6 +47,12 @@
 &lt;input type="radio" id="myToggleGroup" name="group1" /&gt;
 &lt;label for="myToggleGroup"&gt;Option A&lt;/label&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div>
+          <input type="radio" id="myToggleGroup" name="group1" />
+          <label for="myToggleGroup">Option A</label>
+        </div>
       </div>
     </section>
     <div class="pagination">

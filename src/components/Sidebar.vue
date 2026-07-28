@@ -9,8 +9,11 @@ const emit = defineEmits(["close"]);
       <h2>JavaFX Modern Docs</h2>
     </div>
     <nav class="sidebar-nav">
-      <details class="nav-group">
-        <summary><h3>FXML Tutorial</h3></summary>
+      <details class="nav-group" open>
+        <summary><h3>JavaFX Doc 17</h3></summary>
+        <div class="nested-group" style="padding-left: 15px;">
+          <details class="nav-group">
+            <summary><h3>FXML Tutorial</h3></summary>
         <ul class="sub-menu">
           <li>
             <router-link to="/fxml/overview" @click="emit('close')"
@@ -1002,6 +1005,14 @@ const emit = defineEmits(["close"]);
           </li>
         </ul>
       </details>
+        </div>
+      </details>
+        </div>
+      </details>
+      <details class="nav-group">
+        <summary><h3>JavaFX 26 API</h3></summary>
+        <div class="nested-group" style="padding-left: 15px;">
+          <p style="padding: 10px 24px; color: var(--text-muted); font-size: 0.85rem;">(Coming soon...)</p>
         </div>
       </details>
     </nav>

@@ -16,6 +16,9 @@
         <pre><code>&lt;Label text="%myText"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">%myText</span>
+      </div>
 
       <p>If the loader is given a resource bundle defined as follows:</p>
 
@@ -23,6 +26,9 @@
         <div class="code-header">Example</div>
         <pre><code>myText = This is the text!
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="font-family: monospace; background-color: #f4f4f4; padding: 5px; border-radius: 4px; color: #333;">myText = This is the text!</div>
       </div>
 
       <p>
@@ -41,6 +47,9 @@
         <pre><code class="language-html">&lt;!-- Web Analogy for Resource Resolution (using a template engine) --&gt;
 &lt;span&gt;{{ $t('myText') }}&lt;/span&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <span>This is the text!</span>
       </div>
     </section>
     <div class="pagination">

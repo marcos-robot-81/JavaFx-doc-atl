@@ -34,6 +34,9 @@
 &lt;/Label&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
+      </div>
 
       <p>
         This produces the same result as the earlier example which used an
@@ -45,6 +48,9 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 &lt;Label text="Hello, World!"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
       </div>
 
       <p>
@@ -107,6 +113,12 @@
 &lt;/Group&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-group">
+          <div class="javafx-rectangle" style="width: 320px; height: 240px; background-color: #ff0000;"></div>
+          <span>...</span>
+        </div>
+      </div>
 
       <p>
         As each sub-element of the
@@ -138,6 +150,9 @@
     &lt;properties foo="123" bar="456"/&gt;
 &lt;/Button&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Button</button>
       </div>
 
       <p>
@@ -177,6 +192,12 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+          <span>...</span>
+        </div>
+      </div>
 
       <p>
         Note that default properties are not limited to collections. If an
@@ -198,6 +219,11 @@
 &lt;/ScrollPane&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-scrollpane">
+          <textarea class="javafx-textarea">Once upon a time...</textarea>
+        </div>
+      </div>
 
       <p>
         Taking advantage of default properties can significantly reduce the
@@ -218,6 +244,12 @@
   &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
   &lt;option value="saab"&gt;Saab&lt;/option&gt;
 &lt;/select&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <select name="cars" style="padding: 5px; border-radius: 4px;">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </select>
       </div>
     </section>
     <div class="pagination">

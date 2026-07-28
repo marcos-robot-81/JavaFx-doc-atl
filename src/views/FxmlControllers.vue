@@ -28,6 +28,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <div class="code-block">
         <div class="code-header">Example</div>
@@ -39,6 +44,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller Class: MyController</div>
       </div>
 
       <p>
@@ -54,6 +62,9 @@ public class MyController {
         <div class="code-header">Example</div>
         <pre><code>public void initialize();
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Method: initialize()</div>
       </div>
 
       <p>
@@ -83,6 +94,11 @@ public class MyController {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <div class="code-block">
         <div class="code-header">Example</div>
@@ -102,6 +118,9 @@ public class MyController implements Initializable {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller: Initializable with Button Field</div>
       </div>
 
       <h3><a id="fxml_annotation">@FXML</a></h3>
@@ -136,6 +155,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">@FXML Method: handleButtonAction</div>
+      </div>
 
       <div class="code-block">
         <div class="code-header">Example</div>
@@ -155,6 +177,9 @@ public class MyController implements Initializable {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">@FXML Field and Method injected</div>
       </div>
 
       <p>
@@ -187,6 +212,9 @@ public class MyController implements Initializable {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">VBox with Nested dialog.fxml include</div>
+      </div>
 
       <div class="caption">MainController.java</div>
       <div class="code-block">
@@ -198,6 +226,9 @@ public class MyController implements Initializable {
     ...
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">MainController Fields: dialog, dialogController</div>
       </div>
 
       <p>
@@ -222,6 +253,11 @@ public class MyController implements Initializable {
 &lt;/div&gt;
 &lt;script src="appController.js"&gt;&lt;/script&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div id="app" style="padding: 10px; border: 1px solid #ccc;">
+            <button class="javafx-btn" onclick="console.log('handleClick()')">Click Me!</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

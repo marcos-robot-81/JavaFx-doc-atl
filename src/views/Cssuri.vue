@@ -114,6 +114,9 @@
     }
         </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="background-image: url('images/Duke.png'); width: 300px; height: 250px;"></div>
+      </div>
       <p>The same style would work equally as well from a stylesheet.</p>
     </section>
     <div class="pagination">

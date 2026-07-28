@@ -30,6 +30,12 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+          <span>...</span>
+        </div>
+      </div>
 
       <p>
         Note that default properties are not limited to collections. If an
@@ -51,6 +57,11 @@
 &lt;/ScrollPane&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-scrollpane">
+          <textarea class="javafx-textarea">Once upon a time...</textarea>
+        </div>
+      </div>
 
       <p>
         Taking advantage of default properties can significantly reduce the
@@ -68,6 +79,11 @@
     &lt;!-- Automatically added as children of the div --&gt;
     &lt;button&gt;Click Me!&lt;/button&gt;
 &lt;/div&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <button class="javafx-btn">Click Me!</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

@@ -47,6 +47,10 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <!-- just illustrative for import -->
+        <div class="javafx-rect" style="width: 100%; height: 20px; background: #eee; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">Import: javafx.scene.control.Label</div>
+      </div>
 
       <p>
         This PI imports all classes from the javafx.scene.control package into
@@ -57,6 +61,10 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;?import javafx.scene.control.*?&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <!-- just illustrative for import -->
+        <div class="javafx-rect" style="width: 100%; height: 20px; background: #eee; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">Import: javafx.scene.control.*</div>
       </div>
 
       <p>
@@ -72,6 +80,30 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 &lt;Label text="Hello, World!"/&gt;
 </code></pre>
+      </div>
+
+      <!-- JavaFX Live Preview -->
+      <div class="javafx-preview">
+        <div class="javafx-preview-header">
+          <span class="javafx-preview-badge">👁 JavaFX Preview</span>
+          <span class="javafx-preview-subtitle">Result on screen</span>
+        </div>
+        <div class="javafx-window">
+          <div class="javafx-titlebar">
+            <div class="javafx-titlebar-left">
+              <img class="javafx-app-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%234b6cb7'/%3E%3Ctext x='8' y='12' text-anchor='middle' fill='white' font-size='10' font-family='sans-serif' font-weight='bold'%3EFX%3C/text%3E%3C/svg%3E" alt="FX" />
+              <span class="javafx-titlebar-title">JavaFX Application</span>
+            </div>
+            <div class="javafx-window-controls">
+              <span class="javafx-ctrl javafx-ctrl-min">─</span>
+              <span class="javafx-ctrl javafx-ctrl-max">□</span>
+              <span class="javafx-ctrl javafx-ctrl-close">✕</span>
+            </div>
+          </div>
+          <div class="javafx-content">
+            <span class="javafx-label">Hello, World!</span>
+          </div>
+        </div>
       </div>
 
       <p>
@@ -113,6 +145,11 @@
         <pre><code>&lt;HashMap foo="123" bar="456"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #f8f9fa; border: 1px solid #ddd; font-family: monospace;">
+          { foo: "123", bar: "456" }
+        </div>
+      </div>
 
       <h5>fx:value</h5>
       <p>
@@ -132,6 +169,13 @@
 &lt;Double fx:value="1.0"/&gt;
 &lt;Boolean fx:value="false"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox" style="gap: 4px;">
+          <div class="javafx-label">String: "Hello, World!"</div>
+          <div class="javafx-label">Double: 1.0</div>
+          <div class="javafx-label">Boolean: false</div>
+        </div>
       </div>
 
       <p>
@@ -159,6 +203,13 @@
 &lt;/FXCollections&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <ul style="margin: 0; padding-left: 20px; font-family: monospace;">
+          <li>"A"</li>
+          <li>"B"</li>
+          <li>"C"</li>
+        </ul>
+      </div>
 
       <h5>Builders</h5>
       <p>
@@ -183,6 +234,9 @@
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Interface: Builder&lt;T&gt;</div>
+      </div>
 
       <p>
         A <span class="code">javafx.util.BuilderFactory</span> is responsible
@@ -195,6 +249,9 @@
     public Builder&lt;?&gt; getBuilder(Class&lt;?&gt; type);
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Interface: BuilderFactory</div>
       </div>
 
       <p>
@@ -209,6 +266,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;Color red="1.0" green="0.0" blue="0.0"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="width: 50px; height: 50px; background-color: rgb(255, 0, 0); border: 1px solid #000;"></div>
       </div>
 
       <p>
@@ -228,6 +288,9 @@
     &lt;blue&gt;0.0&lt;/blue&gt;
 &lt;/Color&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="width: 50px; height: 50px; background-color: rgb(255, 0, 0); border: 1px solid #000;"></div>
       </div>
 
       <p>
@@ -257,6 +320,9 @@
         <pre><code>&lt;fx:include source="<span class="variable">filename</span>"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">Included File: filename</div>
+      </div>
 
       <p>
         where <span class="variable">filename</span> is the name of the FXML
@@ -278,6 +344,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">Included: my_button.fxml</div>
+        </div>
+      </div>
 
       <p>
         If <span class="filename">my_button.fxml</span> contains the following:
@@ -287,6 +358,9 @@
         <pre><code>&lt;?import javafx.scene.control.*?&gt;
 &lt;Button text="My Button"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">My Button</button>
       </div>
 
       <p>
@@ -316,6 +390,9 @@
         <pre><code>&lt;fx:include source="<span class="variable">filename</span>" resources="<span class="variable">resource_file</span>" charset="utf-8"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">Included File with Resources: filename</div>
+      </div>
 
       <h4><a id="constant_elements">&lt;fx:constant&gt;</a></h4>
       <p>
@@ -335,6 +412,9 @@
     &lt;minHeight&gt;&lt;Double fx:constant="NEGATIVE_INFINITY"/&gt;&lt;/minHeight&gt;
 &lt;/Button&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Button (minHeight=-Infinity)</button>
       </div>
 
       <h4><a id="reference_elements">&lt;fx:reference&gt;</a></h4>
@@ -364,6 +444,9 @@
 &lt;/ImageView&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="width: 100px; height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;">myImage (Reference)</div>
+      </div>
 
       <p>
         Note that, since it is also possible to dereference a variable using the
@@ -382,6 +465,13 @@
     &lt;fx:reference source="element3"/&gt;
 &lt;/ArrayList&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <ul style="margin: 0; padding-left: 20px; font-family: monospace;">
+          <li>Ref: element1</li>
+          <li>Ref: element2</li>
+          <li>Ref: element3</li>
+        </ul>
       </div>
 
       <p>
@@ -449,6 +539,9 @@
 &lt;/Label&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
+      </div>
 
       <p>
         This produces the same result as the earlier example which used an
@@ -460,6 +553,9 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 &lt;Label text="Hello, World!"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
       </div>
 
       <p>
@@ -734,6 +830,12 @@ gridPane.getChildren().add(label);
   &lt;input type="text" name="username" /&gt;
   &lt;button type="submit"&gt;Submit&lt;/button&gt;
 &lt;/form&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <input type="text" placeholder="username" style="margin-right: 5px;">
+            <button class="javafx-btn">Submit</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

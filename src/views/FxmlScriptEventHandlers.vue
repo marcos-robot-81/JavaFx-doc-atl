@@ -23,6 +23,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Note the use of the language processing instruction at the beginning of
@@ -61,6 +66,9 @@
       <div class="code-block">
         <div class="code-header">Web Equivalent</div>
         <pre><code>&lt;button onclick="console.log('You clicked me!');"&gt;Click Me!&lt;/button&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn" onclick="console.log('You clicked me!');">Click Me!</button>
       </div>
     </section>
     <div class="pagination">

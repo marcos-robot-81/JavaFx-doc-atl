@@ -26,8 +26,13 @@
        &lt;GridPane.columnIndex&gt;0&lt;/GridPane.columnIndex&gt;
         &lt;/Label&gt;
     &lt;/children&gt;
-&lt;/TabPane&gt;
+&lt;/GridPane&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-gridpane" style="display: grid;">
+          <span class="javafx-label" style="grid-row: 1; grid-column: 1;">My Label</span>
+        </div>
       </div>
 
       <p>This translates roughly to the following in Java:</p>
@@ -44,6 +49,11 @@ GridPane.setColumnIndex(label, 0);
 
 gridPane.getChildren().add(label);
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-gridpane" style="display: grid;">
+          <span class="javafx-label" style="grid-row: 1; grid-column: 1;">My Label</span>
+        </div>
       </div>
 
       <p>
@@ -75,6 +85,11 @@ gridPane.getChildren().add(label);
         <pre><code>&lt;div style="display: grid;"&gt;
     &lt;label style="grid-row: 1; grid-column: 1;"&gt;My Label&lt;/label&gt;
 &lt;/div&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="display: grid;">
+          <label style="grid-row: 1; grid-column: 1;">My Label</label>
+        </div>
       </div>
     </section>
     <div class="pagination">

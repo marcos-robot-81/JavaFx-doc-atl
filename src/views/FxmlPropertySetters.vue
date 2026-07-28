@@ -22,6 +22,9 @@
 &lt;/Label&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
+      </div>
 
       <p>
         This produces the same result as the earlier example which used an
@@ -33,6 +36,9 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 &lt;Label text="Hello, World!"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
       </div>
 
       <p>
@@ -77,6 +83,11 @@
         <pre><code>&lt;select&gt;
     &lt;option&gt;Option 1&lt;/option&gt;
 &lt;/select&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <select style="padding: 5px; border-radius: 4px;">
+          <option>Option 1</option>
+        </select>
       </div>
     </section>
     <div class="pagination">

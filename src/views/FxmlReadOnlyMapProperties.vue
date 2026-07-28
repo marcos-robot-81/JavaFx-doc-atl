@@ -27,6 +27,9 @@
 &lt;/Button&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Button</button>
+      </div>
 
       <p>
         Note that a read-only property whose type is neither a
@@ -46,6 +49,9 @@
         <pre><code>&lt;button data-foo="123" data-bar="456"&gt;
     Click me
 &lt;/button&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Click me</button>
       </div>
     </section>
     <div class="pagination">

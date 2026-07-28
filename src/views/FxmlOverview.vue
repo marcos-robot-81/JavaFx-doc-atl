@@ -29,6 +29,12 @@
   &lt;button&gt;Click Me&lt;/button&gt;
 &lt;/div&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <div>
+          <h1>Hello World</h1>
+          <button class="javafx-btn">Click Me</button>
+        </div>
+      </div>
     </section>
     <div class="pagination">
       <router-link to="/fxml/elements" class="btn btn-next"

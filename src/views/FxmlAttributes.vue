@@ -24,6 +24,9 @@
 &lt;Button text="Click Me!"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <button class="javafx-btn">Click Me!</button>
+      </div>
 
       <p>
         As with property elements, property attributes support type coercion.
@@ -37,6 +40,9 @@
         <pre><code>&lt;Rectangle fx:id="rectangle" x="10" y="10" width="320" height="240"
     fill="#ff0000"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="width: 320px; height: 240px; background-color: #ff0000;"></div>
       </div>
 
       <p>
@@ -89,6 +95,9 @@
 &lt;/ImageView&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="width: 100px; height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;">my_image.png</div>
+      </div>
 
       <p>
         Since <span class="code">Image</span> is an immutable object, a builder
@@ -102,6 +111,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;ImageView image="@my_image.png"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="width: 100px; height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;">my_image.png</div>
       </div>
 
       <p>
@@ -121,6 +133,9 @@
         <pre><code>&lt;Image url="@My%20Image.png"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="width: 100px; height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center; border: 1px solid #aaa;">My Image.png</div>
+      </div>
 
       <p>rather than:</p>
 
@@ -128,6 +143,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;Image url="@My Image.png"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="width: 100px; height: 100px; background: #f8d7da; color: #721c24; display: flex; align-items: center; justify-content: center; border: 1px solid #f5c6cb;">Error: unencoded space</div>
       </div>
 
       <h4><a id="resource_resolution">Resource Resolution</a></h4>
@@ -145,6 +163,9 @@
         <pre><code>&lt;Label text="%myText"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">%myText</span>
+      </div>
 
       <p>If the loader is given a resource bundle defined as follows:</p>
 
@@ -152,6 +173,9 @@
         <div class="code-header">Example</div>
         <pre><code>myText = This is the text!
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 5px; background: #eee; font-family: monospace;">myText = This is the text!</div>
       </div>
 
       <p>
@@ -180,6 +204,13 @@
 &lt;RadioButton text="C" toggleGroup="$myToggleGroup"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup" /> A</label>
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup" /> B</label>
+          <label class="javafx-radiobutton"><input type="radio" name="myToggleGroup" /> C</label>
+        </div>
+      </div>
 
       <p>
         Assigning an <span class="code">fx:id</span> value to an element creates
@@ -204,6 +235,9 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;Label text="\$10.00"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <span class="javafx-label">$10.00</span>
       </div>
 
       <h4><a id="expression_binding">Expression Binding</a></h4>
@@ -230,6 +264,12 @@
         <pre><code>&lt;TextField fx:id="textField"/&gt;
 &lt;Label text="${textField.text}"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-hbox">
+          <input type="text" class="javafx-textfield" value="Type here..." />
+          <span class="javafx-label">Type here...</span>
+        </div>
       </div>
 
       <p>
@@ -317,6 +357,11 @@
 &lt;/TabPane&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-gridpane">
+          <span class="javafx-label">My Label</span>
+        </div>
+      </div>
 
       <p>
         In addition to being more concise, static property attributes, like
@@ -360,6 +405,11 @@
     &lt;/children&gt;
 &lt;/VBox&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
       </div>
 
       <p>
@@ -419,6 +469,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>
         Note the use of the <span class="code">fx:controller</span> attribute on
@@ -437,6 +492,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller Method: handleButtonAction(ActionEvent)</div>
       </div>
 
       <p>
@@ -466,6 +524,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Controller Method: handleButtonAction() [No args]</div>
+      </div>
 
       <p>Controllers are discussed in more detail in a later section.</p>
 
@@ -486,6 +547,11 @@ public class MyController {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>With the controller that contains a field like this</p>
 
@@ -499,6 +565,9 @@ public class MyController {
     ...
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Field: onActionHandler = new EventHandler&lt;&gt;() {...}</div>
       </div>
 
       <p>
@@ -533,6 +602,9 @@ public class MyController {
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">VBox (Listening to children changes)</div>
+      </div>
 
       where the handler method looks like this:
 
@@ -548,6 +620,9 @@ public class MyController {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Method: handleChildrenChange(ListChangeListener.Change)</div>
       </div>
 
       <p>
@@ -571,6 +646,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Method: handleParentChange(...)</div>
+      </div>
 
       <p>
         For convenience, the first parameter can be a subclass of
@@ -590,6 +668,9 @@ public class MyController {
     xmlns:fx="http://javafx.com/fxml" onParentChange="#handleParentChange"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">VBox (Listening to parent changes)</div>
+      </div>
 
       <p>
         Note that collections and properties do not currently support scripting
@@ -607,6 +688,9 @@ public class MyController {
   Click Me!
 &lt;/button&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <button id="myBtn" class="javafx-btn" onclick="alert('Clicked!')" data-custom="value">Click Me!</button>
       </div>
     </section>
     <div class="pagination">

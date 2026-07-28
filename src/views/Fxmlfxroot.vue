@@ -26,6 +26,11 @@
   &lt;p&gt;Custom Control Content&lt;/p&gt;
 &lt;/template&gt;</code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center; color: red;">
+          Custom Control Content (Template)
+        </div>
+      </div>
     </section>
     <div class="pagination">
       <router-link to="/fxml/fx-copy" class="btn btn-prev"

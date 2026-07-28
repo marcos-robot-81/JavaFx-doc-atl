@@ -22,6 +22,10 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <!-- illustrative -->
+        <div class="javafx-rect" style="padding: 5px; background: #eee; font-size: 12px; color: #666; border: 1px dashed #ccc; text-align: center;">Import: javafx.scene.control.Label</div>
+      </div>
 
       <p>
         This PI imports all classes from the javafx.scene.control package into
@@ -32,6 +36,10 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;?import javafx.scene.control.*?&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <!-- illustrative -->
+        <div class="javafx-rect" style="padding: 5px; background: #eee; font-size: 12px; color: #666; border: 1px dashed #ccc; text-align: center;">Import: javafx.scene.control.*</div>
       </div>
 
       <p>
@@ -47,6 +55,10 @@
         <pre><code>&lt;?import javafx.scene.control.Label?&gt;
 &lt;Label text="Hello, World!"/&gt;
 </code></pre>
+      </div>
+
+      <div class="javafx-preview">
+        <span class="javafx-label">Hello, World!</span>
       </div>
 
       <p>
@@ -88,6 +100,11 @@
         <pre><code>&lt;HashMap foo="123" bar="456"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #f8f9fa; border: 1px solid #ddd; font-family: monospace;">
+          { foo: "123", bar: "456" }
+        </div>
+      </div>
 
       <h5>fx:value</h5>
       <p>
@@ -107,6 +124,13 @@
 &lt;Double fx:value="1.0"/&gt;
 &lt;Boolean fx:value="false"/&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox" style="gap: 4px;">
+          <div class="javafx-label">String: "Hello, World!"</div>
+          <div class="javafx-label">Double: 1.0</div>
+          <div class="javafx-label">Boolean: false</div>
+        </div>
       </div>
 
       <p>
@@ -134,6 +158,13 @@
 &lt;/FXCollections&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <ul style="margin: 0; padding-left: 20px; font-family: monospace;">
+          <li>"A"</li>
+          <li>"B"</li>
+          <li>"C"</li>
+        </ul>
+      </div>
 
       <h5>Builders</h5>
       <p>
@@ -158,6 +189,9 @@
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Interface: Builder&lt;T&gt;</div>
+      </div>
 
       <p>
         A <span class="code">javafx.util.BuilderFactory</span> is responsible
@@ -170,6 +204,9 @@
     public Builder&lt;?&gt; getBuilder(Class&lt;?&gt; type);
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Interface: BuilderFactory</div>
       </div>
 
       <p>
@@ -184,6 +221,10 @@
         <div class="code-header">Example</div>
         <pre><code>&lt;Color red="1.0" green="0.0" blue="0.0"/&gt;
 </code></pre>
+      </div>
+
+      <div class="javafx-preview">
+        <div class="javafx-color-swatch" style="background-color: rgb(255, 0, 0);"></div>
       </div>
 
       <p>
@@ -203,6 +244,10 @@
     &lt;blue&gt;0.0&lt;/blue&gt;
 &lt;/Color&gt;
 </code></pre>
+      </div>
+
+      <div class="javafx-preview">
+        <div class="javafx-color-swatch" style="background-color: rgb(255, 0, 0);"></div>
       </div>
 
       <p>
@@ -233,6 +278,11 @@
         <pre><code>&lt;!-- HTML Instance Declaration --&gt;
 &lt;img src="/logo.png" alt="Logo" /&gt;
 &lt;!-- This creates an HTMLImageElement in the DOM --&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <img src="#" alt="Logo" style="width: 50px; height: 50px; background: #ddd; display: block;" />
+        </div>
       </div>
     </section>
     <div class="pagination">

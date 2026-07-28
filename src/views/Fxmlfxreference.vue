@@ -28,6 +28,9 @@
 &lt;/ImageView&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">ImageView (myImage)</div>
+      </div>
 
       <p>
         Note that, since it is also possible to dereference a variable using the
@@ -46,6 +49,9 @@
     &lt;fx:reference source="element3"/&gt;
 &lt;/ArrayList&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc; text-align: center;">ArrayList with 3 referenced elements</div>
       </div>
 
       <p>
@@ -73,6 +79,18 @@
   &lt;/defs&gt;
   &lt;use href="#myCircle" x="10" y="10" /&gt;
 &lt;/svg&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div>
+          <label for="myInput">Username</label>
+          <input type="text" id="myInput" />
+        </div>
+        <svg width="100" height="100" style="margin-top: 10px; border: 1px solid #ccc;">
+          <defs>
+            <circle id="myCircle" cx="50" cy="50" r="40" fill="red" />
+          </defs>
+          <use href="#myCircle" x="10" y="10" />
+        </svg>
       </div>
     </section>
     <div class="pagination">

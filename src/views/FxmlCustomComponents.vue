@@ -33,6 +33,12 @@
 &lt;/fx:root&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <input type="text" class="javafx-textfield" />
+          <button class="javafx-btn">Click Me</button>
+        </div>
+      </div>
 
       <p>
         As mentioned earlier, the <span class="code">&lt;fx:root&gt;</span> tag
@@ -106,6 +112,9 @@ public class CustomControl extends VBox {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: CustomControl (extends VBox)</div>
+      </div>
 
       <p>
         Now, callers can use instances of this control in code or in markup,
@@ -121,6 +130,9 @@ customControl.setText("Hello World!");
 hbox.getChildren().add(customControl);
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Java Code using CustomControl</div>
+      </div>
 
       <div class="caption">FXML</div>
       <div class="code-block">
@@ -129,6 +141,14 @@ hbox.getChildren().add(customControl);
     &lt;CustomControl text="Hello World!"/&gt;
 &lt;/HBox&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-hbox">
+          <div class="javafx-vbox">
+            <input type="text" class="javafx-textfield" value="Hello World!" />
+            <button class="javafx-btn">Click Me</button>
+          </div>
+        </div>
       </div>
       <div class="info-alert">
         <strong>HTML Analogy:</strong> Custom components in FXML are
@@ -148,6 +168,12 @@ hbox.getChildren().add(customControl);
   }
   customElements.define('custom-control', CustomControl);
 &lt;/script&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <input type="text" value="Hello World!" style="margin-right: 5px;">
+            <button class="javafx-btn">Click Me</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

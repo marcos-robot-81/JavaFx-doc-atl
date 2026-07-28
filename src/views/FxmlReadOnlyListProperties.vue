@@ -30,6 +30,12 @@
 &lt;/Group&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-group">
+          <div class="javafx-rectangle" style="width: 320px; height: 240px; background-color: #ff0000;"></div>
+          <span>...</span>
+        </div>
+      </div>
 
       <p>
         As each sub-element of the
@@ -49,6 +55,12 @@
     &lt;li&gt;First item&lt;/li&gt;
     &lt;li&gt;Second item&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+        </ul>
       </div>
     </section>
     <div class="pagination">

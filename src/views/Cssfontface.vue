@@ -23,6 +23,9 @@
     }
         </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="font-family: 'sample';">Sample Text with Custom Font</div>
+      </div>
       <p>
         This allows public resources for fonts to be used in a JavaFX
         application. For example, assume the URL
@@ -53,6 +56,9 @@
         public static void main(String[] args) { launch(args); }
     }
         </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="font-family: 'sample'; font-size: 80px;">Hello @FontFace</div>
       </div>
       <p>
         Or, the URL could be imported into a stylesheet with the @import rule.

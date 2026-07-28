@@ -242,3 +242,177 @@ body {
 .nav-group summary:hover h4 {
   color: var(--accent-hover);
 }
+
+/* ═══════════════════════════════════════════════════ */
+/*  JavaFX Preview — simulated window                  */
+/* ═══════════════════════════════════════════════════ */
+
+.javafx-preview {
+  margin: 28px 0;
+  animation: fadeInPreview 0.5s ease-out;
+}
+
+@keyframes fadeInPreview {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.javafx-preview-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.javafx-preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.12);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.javafx-preview-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── The window chrome ────────────────────────────── */
+
+.javafx-window {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.javafx-window:hover {
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(167, 139, 250, 0.15);
+}
+
+.javafx-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: linear-gradient(180deg, #3a3f4b 0%, #2d3240 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+.javafx-titlebar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.javafx-app-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.javafx-titlebar-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #ccc;
+  letter-spacing: 0.2px;
+}
+
+.javafx-window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.javafx-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 20px;
+  font-size: 0.7rem;
+  color: #999;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+  cursor: default;
+}
+
+.javafx-ctrl:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.javafx-ctrl-close:hover {
+  background: #e81123;
+  color: #fff;
+}
+
+/* ── The content area (scene) ─────────────────────── */
+
+.javafx-content {
+  background: #f0f0f0;
+  min-height: 80px;
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 10px;
+}
+
+.javafx-label {
+  font-family: "Segoe UI", "Dialog", system-ui, sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+/* ── JavaFX Component Previews ────────────────────── */
+.javafx-btn { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 4px 16px; background: linear-gradient(to bottom, #e8e8e8, #d6d6d6); border: 1px solid #b4b4b4; border-radius: 3px; color: #1a1a1a; cursor: default; user-select: none; }
+.javafx-textfield { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 3px 6px; border: 1px solid #b4b4b4; background: #fff; color: #1a1a1a; width: 180px; outline: none; }
+.javafx-textarea { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 4px 6px; border: 1px solid #b4b4b4; background: #fff; color: #1a1a1a; width: 220px; height: 60px; resize: none; outline: none; }
+.javafx-checkbox, .javafx-radio { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #1a1a1a; display: flex; align-items: center; gap: 6px; cursor: default; }
+.javafx-vbox { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.javafx-hbox { display: flex; flex-direction: row; gap: 4px; align-items: center; }
+.javafx-gridpane { display: grid; gap: 4px; }
+.javafx-rect { border: none; }
+.javafx-color-swatch { width: 48px; height: 48px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.2); }
+.javafx-progressbar { width: 180px; height: 18px; background: #e0e0e0; border: 1px solid #b4b4b4; border-radius: 2px; overflow: hidden; }
+.javafx-progressbar-fill { height: 100%; background: linear-gradient(to bottom, #4a90d9, #3b7dd8); transition: width 0.3s; }
+.javafx-slider { width: 180px; accent-color: #4a90d9; }
+.javafx-scrollpane { border: 1px solid #b4b4b4; background: #fff; padding: 6px; max-height: 80px; overflow: auto; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #1a1a1a; }
+.javafx-separator { border: none; border-top: 1px solid #c8c8c8; margin: 6px 0; width: 100%; }
+.javafx-table { border-collapse: collapse; font-family: "Segoe UI", system-ui, sans-serif; font-size: 12px; color: #1a1a1a; }
+.javafx-table th, .javafx-table td { border: 1px solid #d0d0d0; padding: 3px 8px; text-align: left; }
+.javafx-table th { background: #e8e8e8; font-weight: 600; }
+.javafx-table tr:nth-child(even) { background: #f6f6f6; }
+.javafx-listview { list-style: none; padding: 0; margin: 0; border: 1px solid #b4b4b4; background: #fff; width: 180px; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #1a1a1a; }
+.javafx-listview li { padding: 3px 8px; border-bottom: 1px solid #eee; }
+.javafx-listview li.selected { background: #0078d4; color: #fff; }
+.javafx-treeview { list-style: none; padding: 0 0 0 16px; margin: 0; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #1a1a1a; }
+.javafx-treeview li::before { content: "▸ "; color: #888; }
+.javafx-menubar { display: flex; background: #f0f0f0; border-bottom: 1px solid #d0d0d0; padding: 0; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; }
+.javafx-menubar-item { padding: 4px 12px; color: #1a1a1a; cursor: default; }
+.javafx-menubar-item:hover { background: #e0e0e0; }
+.javafx-hyperlink { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #0066cc; text-decoration: underline; cursor: default; }
+.javafx-titled-pane { border: 1px solid #b4b4b4; border-radius: 2px; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #1a1a1a; }
+.javafx-titled-pane summary { padding: 4px 8px; background: linear-gradient(to bottom, #e8e8e8, #d6d6d6); cursor: default; user-select: none; }
+.javafx-titled-pane .pane-content { padding: 8px; background: #fff; }
+.javafx-spinner { display: inline-flex; align-items: center; border: 1px solid #b4b4b4; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; }
+.javafx-spinner-value { padding: 2px 12px; background: #fff; color: #1a1a1a; }
+.javafx-spinner-buttons { display: flex; flex-direction: column; }
+.javafx-spinner-btn { font-size: 8px; padding: 0 4px; background: #e0e0e0; border: 1px solid #b4b4b4; cursor: default; line-height: 1; }
+.javafx-choicebox, .javafx-combobox { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 3px 24px 3px 6px; border: 1px solid #b4b4b4; background: linear-gradient(to bottom, #f8f8f8, #e8e8e8); color: #1a1a1a; appearance: auto; cursor: default; }
+.javafx-datepicker { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 3px 6px; border: 1px solid #b4b4b4; background: #fff; color: #1a1a1a; }
+.javafx-tooltip { background: #333; color: #fff; font-family: "Segoe UI", system-ui, sans-serif; font-size: 12px; padding: 4px 8px; border-radius: 3px; display: inline-block; }
+.javafx-password { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; padding: 3px 6px; border: 1px solid #b4b4b4; background: #fff; color: #1a1a1a; width: 180px; outline: none; }

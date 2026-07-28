@@ -26,6 +26,10 @@
 &lt;Label text="${textField.text}"/&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <input type="text" class="javafx-textfield" />
+        <span class="javafx-label">${textField.text}</span>
+      </div>
 
       <p>
         As the user types in the text input, the label's text content will be
@@ -106,6 +110,12 @@
         <div class="code-header">Web Equivalent (Vue.js)</div>
         <pre><code>&lt;input v-model="text" /&gt;
 &lt;span&gt;{{ text }}&lt;/span&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <input type="text" value="reactive text" style="margin-right: 5px;">
+            <span>reactive text</span>
+        </div>
       </div>
     </section>
     <div class="pagination">

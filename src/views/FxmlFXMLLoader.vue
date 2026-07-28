@@ -24,6 +24,9 @@ Pane root = (Pane)fxmlLoader.load();
 MyController controller = (MyController)fxmlLoader.getController();
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Java Code: FXMLLoader instance creation and load</div>
+      </div>
 
       <p>
         Note that the output of an
@@ -70,6 +73,12 @@ MyController controller = (MyController)fxmlLoader.getController();
     &lt;Button text="Click Me" onAction="#doSomething"/&gt;
 &lt;/fx:root&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <input type="text" class="javafx-textfield" />
+          <button class="javafx-btn">Click Me</button>
+        </div>
       </div>
 
       <p>
@@ -144,6 +153,9 @@ public class CustomControl extends VBox {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: CustomControl (FXMLLoader setRoot/setController)</div>
+      </div>
 
       <p>
         Now, callers can use instances of this control in code or in markup,
@@ -159,6 +171,9 @@ customControl.setText("Hello World!");
 hbox.getChildren().add(customControl);
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Java Code: Using CustomControl</div>
+      </div>
 
       <div class="caption">FXML</div>
       <div class="code-block">
@@ -167,6 +182,11 @@ hbox.getChildren().add(customControl);
     &lt;CustomControl text="Hello World!"/&gt;
 &lt;/HBox&gt;
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-hbox">
+          <div class="javafx-customcontrol">Hello World!</div>
+        </div>
       </div>
       <div class="info-alert">
         <strong>HTML Analogy:</strong> The FXMLLoader acts like the browser's
@@ -184,6 +204,9 @@ hbox.getChildren().add(customControl);
   document.body.appendChild(doc.body.firstChild);
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #eee; border: 1px dashed #ccc; font-size: 12px; color: #666;">JavaScript Fetch/DOMParser Example</div>
       </div>
     </section>
     <div class="pagination">

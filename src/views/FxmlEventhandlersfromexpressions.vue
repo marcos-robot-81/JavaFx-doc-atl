@@ -18,6 +18,11 @@
 &lt;/VBox&gt;
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-vbox">
+          <button class="javafx-btn">Click Me!</button>
+        </div>
+      </div>
 
       <p>With the controller that contains a field like this</p>
 
@@ -31,6 +36,9 @@
     ...
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (onActionHandler field)</div>
       </div>
 
       <p>
@@ -49,6 +57,11 @@
         <div class="code-header">Web Equivalent (React)</div>
         <pre><code>&lt;!-- React JSX --&gt;
 &lt;button onClick={this.onActionHandler}&gt;Click Me!&lt;/button&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <button class="javafx-btn">Click Me!</button>
+        </div>
       </div>
     </section>
     <div class="pagination">

@@ -33,6 +33,9 @@ public class MyController {
 }
 </code></pre>
       </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (private @FXML handleButtonAction)</div>
+      </div>
 
       <div class="code-block">
         <div class="code-header">Example</div>
@@ -52,6 +55,13 @@ public class MyController implements Initializable {
     }
 }
 </code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div class="javafx-rect" style="padding: 10px; background: #282c34; color: #abb2bf; font-family: monospace; font-size: 12px;">Class: MyController (Initializable, @FXML initialize)</div>
+      </div>
+
+      <div class="javafx-preview">
+        <button class="javafx-btn">Button</button>
       </div>
 
       <p>
@@ -75,6 +85,11 @@ public class MyController implements Initializable {
   const button = document.getElementById('myButton');
   button.addEventListener('click', () =&gt; console.log('You clicked me!'));
 &lt;/script&gt;</code></pre>
+      </div>
+      <div class="javafx-preview">
+        <div style="padding: 10px; border: 1px dashed #ccc;">
+            <button class="javafx-btn">Click Me</button>
+        </div>
       </div>
     </section>
     <div class="pagination">
