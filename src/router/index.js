@@ -148,6 +148,10 @@ import CssIncubatorModules from "../views/CssIncubatorModules.vue";
 import CssRichTextArea from "../views/CssRichTextArea.vue";
 import CssCodeArea from "../views/CssCodeArea.vue";
 import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import Maven from "../views/Maven.vue";
+import MavenCommands from "../views/MavenCommands.vue";
+import MavenStructure from "../views/MavenStructure.vue";
 import FxmlOverview from "../views/FxmlOverview.vue";
 import FxmlElements from "../views/FxmlElements.vue";
 import FxmlClassInstanceElements from "../views/FxmlClassInstanceElements.vue";
@@ -185,7 +189,10 @@ import FxmlCustomComponents from "../views/FxmlCustomComponents.vue";
 import FxmlDeployinganApplicationasaModule from "../views/FxmlDeployinganApplicationasaModule.vue";
 
 const routes = [
-  { path: "/", redirect: "/fxml/overview" },
+  { path: "/", component: Home },
+  { path: "/maven", component: Maven },
+  { path: "/maven-commands", component: MavenCommands },
+  { path: "/maven-structure", component: MavenStructure },
   { path: "/fxml/overview", component: FxmlOverview },
   { path: "/fxml/elements", component: FxmlElements },
   {

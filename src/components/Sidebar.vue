@@ -9,6 +9,27 @@ const emit = defineEmits(["close"]);
       <h2>JavaFX Modern Docs</h2>
     </div>
     <nav class="sidebar-nav">
+      <ul class="sub-menu" style="margin-bottom: 20px;">
+        <li>
+          <router-link to="/" @click="emit('close')" style="font-size: 1rem; font-weight: 600;">
+            🏠 Home
+          </router-link>
+        </li>
+      </ul>
+      <details class="nav-group" open>
+        <summary><h3>Maven</h3></summary>
+        <ul class="sub-menu">
+          <li>
+            <router-link to="/maven" @click="emit('close')">JavaFX with Maven</router-link>
+          </li>
+          <li>
+            <router-link to="/maven-commands" @click="emit('close')">Maven Commands</router-link>
+          </li>
+          <li>
+            <router-link to="/maven-structure" @click="emit('close')">Maven Directory Structure</router-link>
+          </li>
+        </ul>
+      </details>
       <details class="nav-group" open>
         <summary><h3>JavaFX Doc 17</h3></summary>
         <div class="nested-group" style="padding-left: 15px;">
