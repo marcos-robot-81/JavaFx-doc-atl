@@ -15,7 +15,21 @@ const emit = defineEmits(["close"]);
             🏠 Home
           </router-link>
         </li>
+        <li>
+          <router-link to="/javadoc" @click="emit('close')" style="font-size: 1rem; font-weight: 600;">
+            📚 JavaFX 26 API (Javadoc)
+          </router-link>
+        </li>
       </ul>
+      <details class="nav-group" open>
+        <summary><h3>Hello World Tutorial</h3></summary>
+        <ul class="sub-menu">
+          <li><router-link to="/tutorial/dir-structure" @click="emit('close')">1. Directory Structure</router-link></li>
+          <li><router-link to="/tutorial/hello-world" @click="emit('close')">2. First App (Java)</router-link></li>
+          <li><router-link to="/tutorial/fxml-css" @click="emit('close')">3. UI with FXML & CSS</router-link></li>
+          <li><router-link to="/tutorial/compiler-errors" @click="emit('close')">4. Reading Compiler Errors</router-link></li>
+        </ul>
+      </details>
       <details class="nav-group" open>
         <summary><h3>Maven</h3></summary>
         <ul class="sub-menu">

@@ -40,6 +40,10 @@
         with Java and JavaFX.
       </p>
     </section>
+
+    <footer class="home-footer">
+      <p>Made with Gemini 3 by low</p>
+    </footer>
   </div>
 </template>
 
@@ -181,6 +185,16 @@
   color: var(--text-muted);
   line-height: 1.8;
   font-size: 1.1rem;
+}
+
+.home-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
